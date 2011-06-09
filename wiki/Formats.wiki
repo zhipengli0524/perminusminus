@@ -1,0 +1,14 @@
+The file format is define as follows
+
+{{{
+Data_File ::= ( Graph )+
+Graph ::= ( Node )+ newline
+Node ::= l_id white_space type ( white_space offset )* ( white_space f_id )* newline
+}}}
+
+The data flow for each graph is define as follows
+
+{{{
+Graph ::= Length ( Node )+
+Node ::= l_id (f_id)* type ( offset )*
+}}}
