@@ -1,6 +1,6 @@
 =Definition=
 
-Path labeling is a generalized model for many tasks.
+Path labeling is a generalized task for many problems. The task is illustrated as the figure bellow.
 
 [http://i54.tinypic.com/21lilgk.png]
 
