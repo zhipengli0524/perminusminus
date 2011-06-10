@@ -1,1 +1,16 @@
+=Definition=
+
+Path labeling is a generalized model for many tasks.
+
 [http://i54.tinypic.com/21lilgk.png]
+
+Suppose we have a DAG (Directed Acyclic Graph) with nodes ( in blue boxes ) shown above. The directions of the edges are determined by the indexes of the nodes in white. All the edges are from the nodes with small indexes.
+
+Each node may have some features (in gray) from a finite set which are observable. We can give some nodes in this graph labels (in white) from a finite set.
+
+Path labeling task is to find a path from the initial nodes (diamond shape) to the terminal nodes (double circle) and give each node on this path a label.
+
+=Special Cases=
+  * If only one label is possible, the problem degrades to a *path finding* problem.
+  * If the DAG is only a sequence with only one initial node and one terminal node, the problem degrades to a *sequence labeling* problem.
+    ** If the sequence has only one node which is both initial and terminal, the problem degrades to a *classification* problem.
