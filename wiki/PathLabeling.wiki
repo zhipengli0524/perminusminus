@@ -2,7 +2,7 @@
 
 Path labeling is a generalized task for many problems. The task is illustrated as the figure bellow.
 
-[http://i54.tinypic.com/21lilgk.png]
+[http://i1220.photobucket.com/albums/dd455/zhangkaixu/per--/pl.png]
 
 Suppose we have a DAG (Directed Acyclic Graph) with nodes ( in blue boxes ) shown above. The directions of the edges are determined by the indexes of the nodes in white. All the edges are from the nodes with small indexes.
 
