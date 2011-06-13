@@ -1,4 +1,4 @@
-=Definition=
+=定义=
 
 Path labeling is a generalized task for many problems. The task is illustrated as the figure bellow.
 
