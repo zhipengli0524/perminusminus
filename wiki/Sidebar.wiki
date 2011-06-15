@@ -1,3 +1,5 @@
-[DataFormat Data format]
-
-[LearningAndPredicting Learning and Predicting]
+  * [DataFormat Data format]
+    * [http://code.google.com/p/perminusminus/wiki/DataFormat#Training_&_Test_Data Training and Test Data]
+    * [DataFormat#Model Model File]
+    * [http://code.google.com/p/perminusminus/wiki/DataFormat#Result Result File]
+  * [LearningAndPredicting Learning and Predicting]
