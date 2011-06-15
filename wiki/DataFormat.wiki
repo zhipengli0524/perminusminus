@@ -7,19 +7,19 @@ The binary file linearly consists of binary data of graphs.
 The binary data for each graph is a sequence of integers:
 
 {{{
-<remaining_int_length> node_count (node_type)+ (predecessors -1)+ (label)+ (features -1)+
+<remaining_int_length> <node_count> (<node_type>)+ (<predecessors> -1)+ (<label>)+ (<features> -1)+
 }}}
 
   * The first integer indicates the length of the remaining sequence.
   * The second integer indicates the number of the nodes in this graph.
-  * Then there is an array of length `node_count` that indicate the type of each node.
-  * Then there is a sequence of `node_count` blocks. The i-th block contains the predecessors of the i-th nodes followed by `-1`.
-  * Then there is an array of length `node_count` that indicate the label of each node.
+  * Then there is an array of length `<node_count>` that indicate the type of each node.
+  * Then there is a sequence of `<node_count>` blocks. The i-th block contains the predecessors of the i-th nodes followed by `-1`.
+  * Then there is an array of length `<node_count>` that indicate the label of each node.
   * Finally the features for the nodes are stored like the predecessors.
 
 This format is suitable for training and maybe test. When we want to release a program for specific purpose, we may need some changes.
 
-Here is the explanations for the `node_type':
+Here is the explanations for the `<node_type>`:
   * 0 indicates that this node is neither an initial node nor a terminal node.
   * 1 indicates that this node is an initial node but not a terminal node.
   * 2 indicates that this node is an terminal node but not a initial node.
