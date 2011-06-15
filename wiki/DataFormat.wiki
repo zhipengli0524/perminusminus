@@ -1,10 +1,3 @@
-=Model=
-The header of the model has two integers to indicate the size of the label set (`l_size`) and the size of the feature set (`f_size`), respectively.
-
-Then two linearly stored matrix is following. One is the weight matrix for label pairs. The other is the weight matrix for feature-label pairs.
-
-So the total size of model file is {{{1 + 1 + l_size * l_size + f_size * l_size}}}.
-
 =Training & Test Data=
 
 Training data and test data have uniform form. The per-- toolkit now can directly read data in the binary files. We also provide a Python3 script to transform JSON file to binary file.
@@ -41,5 +34,12 @@ Each node is a list with 4 elements:
 [node_type, [predecessor, ...], label, [feature_id, ...]]
 }}}
 We provide a Python3 script to transform JSON file to binary file.
+
+=Model=
+The header of the model has two integers to indicate the size of the label set (`l_size`) and the size of the feature set (`f_size`), respectively.
+
+Then two linearly stored matrix is following. One is the weight matrix for label pairs. The other is the weight matrix for feature-label pairs.
+
+So the total size of model file is {{{1 + 1 + l_size * l_size + f_size * l_size}}}.
 
 =Result=
