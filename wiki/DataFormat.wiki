@@ -5,9 +5,11 @@ Training data and test data have uniform form. The per-- toolkit now can directl
 ==Binary File==
 The binary file linearly consists of binary data of graphs.
 The binary data for each graph is a sequence of integers:
+
 {{{
-remaining_int_length node_count (node_type)+ (predecessors -1)+ (label)+ (features -1)+
+<remaining_int_length> node_count (node_type)+ (predecessors -1)+ (label)+ (features -1)+
 }}}
+
   * The first integer indicates the length of the remaining sequence.
   * The second integer indicates the number of the nodes in this graph.
   * Then there is an array of length `node_count` that indicate the type of each node.
