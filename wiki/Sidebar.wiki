@@ -1,7 +1,7 @@
-
   * [http://code.google.com/p/perminusminus/ Home]
   * [DataFormat Data format]
     * [DataFormat#Training_&_Test_Data Training and Test Data]
     * [DataFormat#Model Model File]
     * [DataFormat#Result Result File]
   * [LearningAndPredicting Learning and Predicting]
+  * [CWSExample An Example about Chinese Word Segmentation]
