@@ -1,8 +1,8 @@
 This example is to use `per~~.exe` to do Chinese word segmentation (CWS).
 
-We model CWS as character sequence labeling like some researchers did.
+We model CWS as character sequence labeling like [http://nlp.csai.tsinghua.edu.cn/~zkx/cws/bib.html some other researchers did].
 
-The data we used is the MSR corpus in SIGHAN bakeoff 2005. You can download the data [http://www.sighan.org/bakeoff2005/ there] for free. File `msr_training.utf8` is used as the training data. File `msr_test_gold.utf8` is used as the test data.
+The data we used is the MSR corpus in SIGHAN bakeoff 2005. You can download the data [http://www.sighan.org/bakeoff2005/ there] for free. File `msr_training.utf8` (13.9MB) is used as the training data. File `msr_test_gold.utf8` is used as the test data.
 
 The file `cws_transform.py` is used to transform segmented Chinese text files to binary files that `per~~.exe` can read. The command lines are:
 
@@ -27,7 +27,9 @@ which can be illustrated as the figure bellow:
 
 [http://i1220.photobucket.com/albums/dd455/zhangkaixu/per--/flow.png]
 
-Finally, the `eval.py` file is used for the evaluation.
+In the learning processing, it takes only 6 seconds for each iteration (20 iteration totally)! And the memory usage is only 83MB!
+
+Though we model CWS as character labeling, the evaluation is based on words, not characters. Finally, the `eval.py` file is used for the evaluation.
 
 the result is
 {{{
