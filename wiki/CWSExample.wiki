@@ -30,10 +30,3 @@ which can be illustrated as the figure bellow:
 In the learning processing, it takes only 6 seconds for each iteration (20 iteration totally)! And the memory usage is only 83MB!
 
 Though we model CWS as character labeling, the evaluation is based on words, not characters. Finally, the `eval.py` file is used for the evaluation.
-
-the result is
-{{{
-precision: 0.965508200278, recall: 0.963313427989, F1: 0.964409565437
-}}}
-
-Comparing with the official [http://www.sighan.org/bakeoff2005/data/results.php.htm collected results], our F1 is the same as the No. 1 result.
